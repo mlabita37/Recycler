@@ -6,7 +6,7 @@ var mongoose    = require('mongoose'); // provides mongoDB with object mapping a
 var app = express(); // tells this application to use the loaded express framework
 app.use(express.static('./client/public')); // this says to use express to route us to the public folder
 
-app.use( bodyParser.urlencoded({extended: true}) ); // this says to use bodyParser to send requests in urlencoded format?????
+app.use( bodyParser.urlencoded( {extended: true}) ); // this says to use bodyParser to send requests in urlencoded format?????
 
 var mongoPath = 'mongodb://localhost/recycler-01'; // this defines that DB name and path
 mongoose.connect(mongoPath); // tells mongoose where the mongoDB lives
